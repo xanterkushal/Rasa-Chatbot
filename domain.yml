@@ -1,0 +1,76 @@
+version: '3.1'
+intents:
+- Address
+- Admission
+- Curriculum_Update_Frequency
+- Placements
+# - affirm
+- bot_challenge
+# - deny
+- goodbye
+- greet
+- mood_great
+- thanks
+- Courses
+- out_of_scope
+
+
+
+entities:
+- ctype
+- course
+
+slots:
+  ctype:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: ctype
+
+  course:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: course
+
+  
+
+
+responses:
+  utter_greet:
+  - text: How can I help you today?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  - text: Anytime! Let me know if there's anything else I can do for you.
+  - text: Glad I could assist you!
+  utter_thanks:
+  - text: You're welcome! Happy to help.
+  - text: Glad I could assist you!
+  - text: You're welcome. Don't hesitate to reach out if you have more questions.
+  - text: You're welcome! Happy to help.
+  utter_Address:
+  - text: 'The location is as follows: VIT Bhopal University, Bhopal-Indore Highway Kothrikalan, Sehore Madhya Pradesh- 466114'
+  utter_Admission:
+  - text: 'To get admitted to Vit Bhopal, You need to clear VITEEE exam. For more queries regarding admission visit: https://admission.vitbhopal.ac.in/'
+  - text: 'For Admission in Vit Bhopal, VITEE examination needs to be cleared. For more queries regarding admission visit: https://admission.vitbhopal.ac.in/'
+  - text: 'admissions@vitbhopal.ac.in +91/0 75 6025 4500 / 501, for more info visit: https://vitbhopal.ac.in/contacts/'
+  utter_Placements:
+  - text: 'VIT Bhopal ensures the best placements for its students. The university has a centralized placement system for all the campuses through the VIT Career Development Centre similar to the centralized admission procedure followed for all VIT campuses. Key features of the 2023 VIT Bhopal student batch include: 1. Over 1200 job offers were made to the students. 2. The highest package offered was 59 LPA, along with other notable offers at 54 LPA, 32 LPA, 27 LPA, and 22 LPA. 3. More than 55% of the students secured their dream and super dream job offers. 4. Two students were presented with offers from five different companies. 5. The placement rate has remained consistently impressive at 90% over the past three years. 6. Over 80 students received packages exceeding 15 LPA, among those who registered for placements. Do you want the contact information of placement cell?'
+  
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  
+  utter_curriculum_update:
+  - text: The cybersecurity curriculum is regularly reviewed and updated to ensure it incorporates the latest developments.
+
+  utter_out_of_scope:
+  - text: Sorry, I didn't get what you said. Please rephrase what you said.
+actions:
+- action_fetch_curriculum
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

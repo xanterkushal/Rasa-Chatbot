@@ -1,0 +1,2 @@
+cd Documents/rasa_bot
+conda activate rasa_bot
