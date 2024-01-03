@@ -1,0 +1,161 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+    - Appreciate it
+- intent: Address
+  examples: |
+    - Can you give me the location?
+    - what is the location?
+    - Where is this college?
+    - Where is vit bhopal?
+    - tell me the address?
+    - What is the address?
+    - Address
+    - how can i travel to vit bhopal?
+    - travel?
+    - how to reach vit bhopal?
+- intent: Admission
+  examples: |
+    - how to get admitted?
+    - What is Admission process?
+    - take me to the admission page
+    - admissions
+    - what is admission office phone number
+    - admission office email
+    - contact of admission office
+    - contact details
+    - tell me contact details of admission office?
+- intent: Placements
+  examples: |
+    - placement offers
+    - what are the previous placement offers?
+    - different placement offers to students
+    - previous placement offers
+    - what are the different placement offers offered to students
+    - student's placement offers
+    - How is the placement of vit Bhopal?
+    - placement
+- intent: Curriculum_Update_Frequency
+  examples: |
+    - how frequently is the curriculum updated in cybersecurity program?
+    - update frequency of cybersecurity program?
+    - does the curriculum change in cybersecurity?
+
+# - intent: Courses
+#   examples: |
+#     - [Btech CSE core](program)
+#     - [Btech cybersecurity](program)
+#     - [Btech cybersecurity curiculum] (program)
+#     - Tell me about [Btech cybersecurity programs](program).
+#     - Tell me about [Mtech cybersecurity programs](program).
+#     - Can I get info on [Mtech cybersecurity programs](program)?
+#     - [Btech cloud computing programs](program)
+#     - [Computer Science programs](program)
+#     - Which [MBA programs](program) are offered?
+#     - Tell me about [data science programs](program) details.
+#     - [Electrical Engineering programs](program) information.
+
+
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - what is 2 + 3?
+    - how many students in college?
+
+- intent: Courses
+  examples: |
+    - [btech](ctype) [CSE core](course)
+    - [btech](ctype) [cybersecurity](course) curriculum?
+    - Tell me about [btech](ctype) [CSE core](course) curriculum?
+    - Tell me about [Btech](ctype) [cybersecurity](course) curriculum?
+    - give info of [btech](ctype) [cse core](course) curriculum? 
+
+# - synonym: course
+#   examples: |
+#     - aiml
+#     - Artificial Intelligence
+#     - Machine learning
+#     - cloud computing
+#     - cloud
+#     - cybersecurity
+#     - cloud computing
+#     - CSE CORE
+#     - cse
+#     - cyber
+#     - ai and ml
+
+# - synonym: ctype
+#   examples: |
+#     - btech
+#     - mtech
+#     - M.tech
+#     - B.tech
+#     - BTECH
+#     - MTECH
+#     - bba
+#     - Barch
+#     - B.Arch
+#     - B.TECH
+
+    
+
+
+
+  
+    
+
+
+    
