@@ -1,0 +1,61 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: address query
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Address
+  - action: utter_Address
+
+- story: admission query
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: Admission
+  - action: utter_Admission
+
+- story: Placements query
+  steps:
+  - intent: Placements
+  - action: utter_Placements
+
+- story: thanks
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- story: Curriculum Update Frequency
+  steps:
+  - intent: Curriculum_Update_Frequency
+  - action: utter_curriculum_update
+  
+
+- story: Courses info
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: Courses
+    - action: action_fetch_curriculum
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
