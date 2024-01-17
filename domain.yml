@@ -19,6 +19,7 @@ intents:
 entities:
 - ctype
 - course
+- requested_info
 
 slots:
   ctype:
@@ -32,6 +33,12 @@ slots:
     mappings:
       - type: from_entity
         entity: course
+
+  requested_info:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: requested_info
 
   
 
@@ -68,7 +75,7 @@ responses:
   utter_out_of_scope:
   - text: Sorry, I didn't get what you said. Please rephrase what you said.
 actions:
-- action_fetch_curriculum
+- action_fetch_academic_details
 
 
 session_config:
